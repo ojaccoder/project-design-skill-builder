@@ -50,6 +50,7 @@ Plan the sequence of viewport-sized sections: what each reveals, its dominant me
 Create a skill folder with a concise `SKILL.md` and references only where they reduce repeated rediscovery. Include:
 
 - audience, job-to-be-done, and product tone;
+- project-specific interface copy rules and actual examples for key headings, actions, and states, using [references/interface-copy.md](references/interface-copy.md);
 - visual direction with 4–6 named colors, typography roles, spacing/radius/shadow rules, and layout principles;
 - information architecture and responsive behavior;
 - interaction states, feedback, empty/loading/error states, and accessibility;
@@ -65,6 +66,8 @@ Create a skill folder with a concise `SKILL.md` and references only where they r
 Choose references by mode, for example `references/visual-system.md`, `references/motion.md`, `references/image-direction.md`, and `references/qa-checklist.md`. Do not copy entire external manuals. Capture decisions and constraints that change implementation choices.
 
 ## Content restraint
+
+Read [references/interface-copy.md](references/interface-copy.md) when generating the project's writing rules. Embed the relevant rules and project-specific examples in the generated Skill itself. They govern visible UI text: concrete purpose and action, consistent terminology, truthful states, and natural language without empty slogans or redundant explanations. Do not import conversational filler or invented personality into product copy.
 
 Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.
 

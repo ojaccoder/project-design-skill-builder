@@ -36,7 +36,7 @@ npx skills add ojaccoder/project-design-skill-builder
 | 常见问题 | 生成的规则会明确什么 |
 | --- | --- |
 | 页面有 AI 模板味：等大的卡片、重复布局、无关装饰 | 谁在用、先看什么、先做什么，以及适合内容的视觉方向 |
-| 文案空泛、标签太多，用户看不出重点 | 标题说具体价值，按钮说实际动作，删掉重复说明和装饰性标签 |
+| 文案空泛、标签太多，用户看不出重点 | 标题说具体用途，按钮说实际动作，状态说发生了什么；删掉口号、重复说明和装饰性标签 |
 | 每次改页面都要重新解释审美 | 将布局、字体、颜色、图片方向和交互约定保存在项目中 |
 | 图片和动效只是摆设 | 明确图片的内容用途、动效的触发与反馈、实现方式和验收条件 |
 
@@ -54,4 +54,4 @@ npx skills add ojaccoder/project-design-skill-builder
 
 适合已有项目需要重新整理设计方向，或团队想把反复沟通的要求沉淀下来。已有清晰、可执行的设计规范时，可以直接沿用现有规范。结果仍需结合真实页面验证，不承诺一次生成就消除所有设计问题。
 
-[详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md) · [参考来源](docs/references.md)
+[界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md) · [参考来源](docs/references.md)
