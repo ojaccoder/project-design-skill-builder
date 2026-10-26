@@ -86,6 +86,31 @@ For verification, use representative task flows and states for Operate, find-and
 
 Do not turn a one-page composition into a permanent layout for every future page. Scope solution choices to the surface they describe and explain when to revisit them. Embed selected guidance in the generated Skill; do not leave instructions to fetch this generator's references later.
 
+## Decide media and motion, then carry the decision into implementation
+
+Assess imagery and motion independently for the actual surface. “Optional” means a deliberate choice, not silent omission. A mode sets priorities; it does not prohibit media. User-requested imagery or motion is part of the brief, not an optional suggestion. Evaluate relevant opportunities without inventing a quota or decorating every page:
+
+- **Imagery:** would an image show something users need to recognize, explain spatial or visual information, demonstrate an actual result, or create an atmosphere the brief calls for? If yes, choose the appropriate source: supplied assets, real screenshots, factual diagrams, or generated illustration/brand art. Generate when that source fits and suitable existing assets are missing. Do not synthesize factual evidence, real product results, people or event photos and present them as genuine.
+- **Motion:** would a transition make a state change, spatial relationship, manipulation or product behavior easier to understand? Would expressive movement serve the requested experience? Implement useful motion. Basic feedback can be immediate; it does not require animation. Preserve speed, readability and reduced-motion behavior.
+- **Omit:** omit imagery or motion when it adds no task or expressive value, duplicates sufficient existing content, conflicts with user preference, or imposes a disproportionate cost. Lack of an existing image or animation library alone is not a reason to skip a useful treatment.
+
+Record a brief decision for each in the generated Skill: use/reuse/generate or omit, location, purpose and a concrete implementation check. Keep these notes in the design rules, not as extra labels in the interface. Chosen work belongs under **本次方案选择**; reserve **可选建议** for unselected experiments. If the decision remains uncertain, ask only when the answer materially changes the result; otherwise make a reasoned choice.
+
+Examples of different outcomes, not presets:
+
+- Approval queue: no decorative hero image; a short transition may help users follow a processed row, with instant feedback if motion adds delay.
+- Visual learning article: a relevant diagram may improve understanding while the rest stays static. Use accurate diagram tooling when needed rather than treating all visuals as image-generation requests.
+- Product homepage: real UI demonstrates capability; generated brand imagery and a working interactive demonstration may be justified by the brief, each with a distinct job.
+- Simple settings form: text and controls with clear save/error states may be sufficient; neither generated imagery nor animation is required.
+
+Embed an implementation handoff in the generated Skill for selected work:
+
+- When later asked to build or redesign the interface, create or reuse the selected assets, save them in the project, and connect them to the real page. If generated raster imagery is selected, invoke the available image-generation capability; a prompt, empty placeholder or unrelated CSS shape is not the finished asset.
+- Implement selected interactions in working components using the existing stack or suitable native APIs. Most UI motion needs code, not a video model. Use model-generated video only when the actual deliverable needs it and access is authorized.
+- Verify images load and crop correctly at supported sizes. Exercise the actual triggers and state changes; check reduced-motion behavior. State what was implemented and disclose unavailable capabilities or unfinished selected work. Do not quietly downgrade it to an optional suggestion.
+
+A request only to generate a Skill produces executable design instructions, not a completed website or a claim that assets have been generated. If the user also requests implementation, carry out the selected work within that scope. Keep the handoff self-contained so the next assistant can execute it without this generator.
+
 ## Content restraint
 
 Read [references/interface-copy.md](references/interface-copy.md) when generating the project's writing rules. Embed the relevant rules and project-specific examples in the generated Skill itself. They govern visible UI text: concrete purpose and action, consistent terminology, truthful states, and natural language without empty slogans or redundant explanations. Do not import conversational filler or invented personality into product copy.
