@@ -1,8 +1,8 @@
 # Design Skill Builder
 
-**去掉 AI 味，去掉多余废话。让设计适合你的项目。**
+**为你的项目，生成一套设计规则。**
 
-页面总像套模板，文案堆满空话，换个页面风格又变了？这个 Skill 先读项目、问清背景，再把视觉、文案、图片和动效要求写成一份项目专属的设计 Skill，供后续开发复用。
+分析现有项目，问清用户、任务和设计偏好，将布局、文案、图片与动效要求整理成项目专属 Skill。新增页面或改版时，沿用同一套规则。
 
 ## 安装
 
@@ -35,7 +35,7 @@ npx skills add ojaccoder/project-design-skill-builder
 
 | 常见问题 | 生成的规则会明确什么 |
 | --- | --- |
-| 页面有 AI 模板味：等大的卡片、重复布局、无关装饰 | 谁在用、先看什么、先做什么，以及适合内容的视觉方向 |
+| 页面缺少重点：内容等重、布局重复、装饰与任务无关 | 谁在用、先看什么、先做什么，以及适合内容的视觉方向 |
 | 文案空泛、标签太多，用户看不出重点 | 标题说具体用途，按钮说实际动作，状态说发生了什么；删掉口号、重复说明和装饰性标签 |
 | 每次改页面都要重新解释审美 | 将布局、字体、颜色、图片方向和交互约定保存在项目中 |
 | 图片和动效只是摆设 | 明确图片的内容用途、动效的触发与反馈、实现方式和验收条件 |
@@ -48,10 +48,10 @@ npx skills add ojaccoder/project-design-skill-builder
 
 一份项目专属 `SKILL.md`，以及按需要生成的视觉、交互、图片和验收参考文档。它们包含实际项目的用户、任务、约束和设计决定，后续新增页面与改版可以直接读取。
 
-生成器负责制定规则。网页实现、生图和录屏由编程助手执行；图片模型、浏览器与录屏能力取决于助手环境。生成的 Skill 自包含，不要求再安装 Impeccable 或其他设计 Skill。
+生成器负责制定规则。网页实现、生图和录屏由编程助手执行；图片模型、浏览器与录屏能力取决于助手环境。生成的文件保存在项目中，后续开发可以直接读取。
 
 ## 什么时候用
 
 适合已有项目需要重新整理设计方向，或团队想把反复沟通的要求沉淀下来。已有清晰、可执行的设计规范时，可以直接沿用现有规范。结果仍需结合真实页面验证，不承诺一次生成就消除所有设计问题。
 
-[界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md) · [参考来源](docs/references.md)
+[界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)
