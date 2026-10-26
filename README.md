@@ -4,6 +4,8 @@
 
 分析现有项目，问清用户、任务和设计偏好，将布局、文案、图片与动效要求整理成项目专属 Skill。新增页面或改版时，沿用同一套规则。
 
+[官网](https://design-skill-builder.vercel.app) · [使用文档](https://design-skill-builder.vercel.app/docs.html)
+
 ## 安装
 
 在项目目录运行，按提示选择你使用的编程助手：
