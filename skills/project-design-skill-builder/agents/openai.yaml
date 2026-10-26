@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目设计 Skill 生成器"
+  short_description: "先澄清用户、场景与审美，再为具体项目生成视觉、交互、动效及图片规范技能"
+  default_prompt: "使用 $project-design-skill-builder，先了解我的项目背景并澄清关键问题，再生成适合这个项目的设计 Skill。"
