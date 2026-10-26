@@ -1,10 +1,10 @@
 # Learn the visual system, then compose the project
 
-Use for visual direction, especially when a result feels flat, generic or monotonous. This reference embeds the method; it requires no additional Skill.
+Use selectively when visual exploration is needed. First establish the surface mode; a monotonous workbench may need better density and hierarchy rather than marketing imagery. The website examples below apply primarily to Persuade / Experience. This reference embeds the method; it requires no additional Skill.
 
 ## Inspect what is actually rendered
 
-Open the named source in a real browser. Review the first screen, one content-rich screen, one media screen, and the mobile rendering where accessible. A text scrape cannot establish layout, typography, depth, crop, color or motion quality. Save screenshots and distinguish loaded content from placeholders. When a user asks to see the site, open its actual URL in the available visible browser; do not imply a background capture changed their current tab.
+Open the named source in a real browser. Review the first screen, one representative content or task screen, a media screen if relevant, and supported responsive layouts where accessible. A text scrape cannot establish layout, typography, depth, crop, color or motion quality. Save screenshots and distinguish loaded content from placeholders. When a user asks to see the site, open its actual URL in the available visible browser; do not imply a background capture changed their current tab.
 
 Extract a few decisive relationships, not an inventory of widgets:
 
@@ -31,7 +31,7 @@ Do not copy exact gradients, colors, radii, illustrations or brand marks. A sour
 
 ## Establish a deliberate visual world
 
-Before implementation, write a short project-specific statement of:
+For expressive Persuade / Experience surfaces, consider the relevant items below. For Operate / Read, document hierarchy, density, typography and component roles instead; a visual world is optional:
 
 1. The visitor's visual impression and the product truth it should express.
 2. The dominant composition and biggest visual subject.

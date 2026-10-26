@@ -1,6 +1,6 @@
 # Rich, coherent platform websites
 
-Use for marketing/official websites and product discovery; adapt selectively to task-focused applications. These are synthesized design recommendations informed by the official-site observations, not claims that every reference implements every technique.
+Use for Persuade surfaces and selected Experience surfaces. These are optional patterns, not defaults for operational applications or reading interfaces. These are synthesized design recommendations informed by the official-site observations, not claims that every reference implements every technique.
 
 ## 1. Show what the product does
 
