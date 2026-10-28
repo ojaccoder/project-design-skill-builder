@@ -1,6 +1,6 @@
 # Learn the visual system, then compose the project
 
-Use selectively when visual exploration is needed. First establish the surface mode; a monotonous workbench may need better density and hierarchy rather than marketing imagery. The website examples below apply primarily to Persuade / Experience. This reference embeds the method; it requires no additional Skill.
+Use selectively when visual exploration is needed. First establish the surface mode; a monotonous workbench may need better density and hierarchy rather than marketing imagery. For the task model, use [operate-design-patterns.md](operate-design-patterns.md), [read-design-patterns.md](read-design-patterns.md) or [experience-design-patterns.md](experience-design-patterns.md) as appropriate. The website examples below apply primarily to Persuade / Experience, and do not replace those mode-specific methods. This reference embeds the method; it requires no additional Skill.
 
 ## Inspect what is actually rendered
 

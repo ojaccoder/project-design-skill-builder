@@ -1,6 +1,6 @@
 # Rich, coherent platform websites
 
-Use for Persuade surfaces and selected Experience surfaces. These are optional patterns, not defaults for operational applications or reading interfaces. These are synthesized design recommendations informed by the official-site observations, not claims that every reference implements every technique.
+Use for Persuade surfaces and Experience surfaces with a documented product-adoption goal. For portfolios, exhibitions and authored experiences, start with [experience-design-patterns.md](experience-design-patterns.md); a conversion sequence is not their default. These are optional patterns, not defaults for operational applications or reading interfaces. These are synthesized design recommendations informed by the official-site observations, not claims that every reference implements every technique.
 
 ## 1. Show what the product does
 

@@ -50,7 +50,16 @@ Separate the generated rules into three layers:
 
 Only enable the relevant visual ambition for the chosen mode. Page sequencing, large media, strong scene changes, and conversion storytelling are mainly Persuade or Experience concerns. Operate and Read surfaces may use them when they improve the task, but never by default.
 
-For a Persuade surface, or an Experience surface that benefits from product storytelling, read [references/platform-design-patterns.md](references/platform-design-patterns.md). It contains embedded methods, not a dependency on another Skill. For reference provenance and limits, use [references/official-site-observations.md](references/official-site-observations.md).
+Read the primary mode's reference before generating its project rules. Read a secondary guide only when the same surface has that documented second job; do not load every guide by default:
+
+| Mode | Reference | Select decisions about |
+| --- | --- | --- |
+| Operate | [references/operate-design-patterns.md](references/operate-design-patterns.md) | Work areas, density, tables, forms, permissions, state transitions and recovery |
+| Persuade | [references/platform-design-patterns.md](references/platform-design-patterns.md) | Value proposition, product evidence, discovery and useful next actions |
+| Read | [references/read-design-patterns.md](references/read-design-patterns.md) | Content structure, findability, typography, anchors and reading continuity |
+| Experience | [references/experience-design-patterns.md](references/experience-design-patterns.md) | Collections or narrative, visual language, media, exploration and visitor control |
+
+These guides contain methods, not dependencies on other Skills or component libraries. Adapt selected rules to the actual routes, components, tokens and content, and embed them in the generated Skill. For Experience, add the Persuade guide only when product adoption is a real secondary goal; an exhibition or portfolio does not automatically need a sales funnel. Reference provenance and limits are in [references/source-notes.md](references/source-notes.md) and [references/official-site-observations.md](references/official-site-observations.md).
 
 When the task needs visual exploration or asks to learn named websites, selectively read [references/visual-direction.md](references/visual-direction.md). Inspect actual rendered pages and separate visual-system analysis from product-flow analysis; neither substitutes for the other.
 

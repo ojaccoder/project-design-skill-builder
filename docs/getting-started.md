@@ -25,6 +25,8 @@ npx skills add ojaccoder/project-design-skill-builder
 
 它先检查现有代码、组件和素材，再判断项目更接近 Operate（工具/工作台）、Persuade（官网/落地页）、Read（文档/知识库）还是 Experience（作品集/展览）。然后询问缺失的信息，例如目标用户、核心任务、参考偏好、设备与业务约束。已有答案不必重复提供；可以直接补充你不喜欢的页面和具体原因。
 
+四种模式各有专门参考：[操作型](../skills/project-design-skill-builder/references/operate-design-patterns.md)、[说服型](../skills/project-design-skill-builder/references/platform-design-patterns.md)、[阅读型](../skills/project-design-skill-builder/references/read-design-patterns.md)、[体验型](../skills/project-design-skill-builder/references/experience-design-patterns.md)。助手按当前界面的主要任务读取；存在明确的次要任务时才补充另一类。作品集或展览不会默认套用官网的转化结构。
+
 ## 3. 看清交付内容
 
 项目专属 Skill 会记录：
@@ -58,8 +60,7 @@ npx skills add ojaccoder/project-design-skill-builder
 ## 更新
 
 ```bash
-npx skills check
-npx skills update
+npx skills update project-design-skill-builder
 ```
 
-`check` 检查已安装 Skill，`update` 按 CLI 的提示更新。保留自己修改过的项目专属规则，避免将它与通用生成器混淆。
+`update` 按 CLI 的提示更新这个生成器；只更新全局安装时可加 `-g`，只更新项目安装时可加 `-p`。保留自己修改过的项目专属规则，避免将它与通用生成器混淆。

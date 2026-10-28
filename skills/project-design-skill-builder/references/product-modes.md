@@ -9,6 +9,19 @@ Use this reference to choose the product's job before selecting a visual directi
 | **Read** | Docs, knowledge base, article, learning surface | User finds and understands information | Reading rhythm, outline, line length, anchors, calm transitions |
 | **Experience** | Portfolio, exhibition, brand or editorial showcase | User follows and remembers the story | Atmosphere, spatial composition, media, scene transitions, controlled surprise |
 
+## Mode-specific references
+
+Read the guide for the primary surface, then select the applicable methods. A genuine secondary job may justify a second guide; the presence of four modes does not require loading or combining all four.
+
+| Mode | Guide | Main coverage |
+| --- | --- | --- |
+| Operate | [operate-design-patterns.md](operate-design-patterns.md) | Task flows, work areas, data density, forms, selection, state/recovery and keyboard operation |
+| Persuade | [platform-design-patterns.md](platform-design-patterns.md) | Product evidence, page composition, discovery, demonstrations and next actions |
+| Read | [read-design-patterns.md](read-design-patterns.md) | Reader needs, navigation/search, anchors, content treatments and reading continuity |
+| Experience | [experience-design-patterns.md](experience-design-patterns.md) | Collections/narrative, art direction, scenes, media, exploration and fallbacks |
+
+Embed selected, project-specific decisions in the generated Skill or its own references. These guides are generator resources, not files the downstream user must fetch.
+
 ## Routing questions
 
 Ask only what is missing:

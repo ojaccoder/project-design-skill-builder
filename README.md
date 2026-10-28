@@ -14,7 +14,7 @@
 npx skills add ojaccoder/project-design-skill-builder
 ```
 
-需要 Node.js 22.20 或更新版本。默认安装到当前项目；希望多个项目都能使用时，在命令末尾加 `-g`。已安装的用户可运行 `npx skills check` 检查更新。
+需要 Node.js 22.20 或更新版本。默认安装到当前项目；希望多个项目都能使用时，在命令末尾加 `-g`。已安装的用户可运行 `npx skills update project-design-skill-builder` 更新生成器。
 
 ## 开始使用
 
@@ -57,5 +57,18 @@ npx skills add ojaccoder/project-design-skill-builder
 ## 什么时候用
 
 适合已有项目需要重新整理设计方向，或团队想把反复沟通的要求沉淀下来。已有清晰、可执行的设计规范时，可以直接沿用现有规范。结果仍需结合真实页面验证，不承诺一次生成就消除所有设计问题。
+
+## 各类型的参考
+
+生成器先判断当前页面的主要任务，再读取对应参考；同一产品中的工作台、文档和官网可以使用不同模式。
+
+| 类型 | 专门参考 | 主要内容 |
+| --- | --- | --- |
+| 操作型 Operate | [工作台、后台与工具](skills/project-design-skill-builder/references/operate-design-patterns.md) | 任务流程、信息密度、表格与表单、批量操作、权限和错误恢复 |
+| 说服型 Persuade | [官网与产品展示](skills/project-design-skill-builder/references/platform-design-patterns.md) | 价值主张、真实证据、页面编排、能力探索和下一步操作 |
+| 阅读型 Read | [文档、知识库与长文](skills/project-design-skill-builder/references/read-design-patterns.md) | 内容组织、导航与搜索、锚点、字体排版、代码图表和阅读连续性 |
+| 体验型 Experience | [作品集、展览与叙事](skills/project-design-skill-builder/references/experience-design-patterns.md) | 内容序列、视觉语言、媒体与场景、探索路径、访客控制和降级 |
+
+按项目需要选取规则，不套用固定页面模板。生成的项目 Skill 会包含选定的规则，后续实现无需再查本生成器的文件。
 
 [界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)
