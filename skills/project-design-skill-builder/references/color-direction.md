@@ -11,13 +11,30 @@ Collect only the context that changes the choice:
 - **Brand and content:** existing tokens, supplied references, recognizable assets, photography and explicit preferences or exclusions.
 - **Expression:** what the interface should communicate while supporting its task; distinguish a brand impression from an operational need.
 
-Label unknowns as assumptions. Do not infer that young users want neon, women want pink, technical users want blue, cultural products want beige, or dance bookings happen at night. A user's actual preference is stronger evidence than a category association. Preserve an established system unless the requested change justifies replacing it.
+Label unknowns as assumptions. Do not infer that young users want neon, women want pink, technical users want blue, cultural products want beige, or dance bookings happen at night. A user's actual preference is stronger evidence than a category association. Preserve confirmed brand constraints, while allowing the project's theme to change within the user's authorization.
 
 “Quiet,” “clean,” “premium,” and “expressive” describe desired effects, not specific hues or light/dark modes. They do not by themselves justify warm off-white, black or any other canvas.
 
+## Ask whether the current color is a brand constraint
+
+An existing project's theme may change. Its current color values, a variable named “brand,” and an assistant's earlier color choice do not establish a brand requirement. “Keep brand continuity” is not a sufficient reason when the user has never confirmed the brand or its protected colors.
+
+Before choosing whether to preserve or replace an unresolved theme, ask one concise question:
+
+> 当前主色是必须保留的品牌色，还是可以重新设计的主题色？
+
+Use the answer:
+
+- **No fixed brand color / redesign authorized:** reassess the theme against the actual tasks, imagery, context and stated taste. Keeping, adjusting and replacing colors are all valid outcomes; continuity is not a default constraint.
+- **Required brand color:** keep the confirmed protected color and ask about its scope only if necessary. A protected logo color does not automatically fix page backgrounds, surfaces, secondary colors, selection or status roles.
+- **Some colors protected, others open:** record those boundaries and design within them.
+- **Already answered in the session:** use that answer and do not ask again. An explicit instruction to change the theme is authorization within its stated scope.
+
+While a necessary brand clarification is pending, continue independent work such as task-flow analysis, preserving the comparison baseline and checking functionality. Do not silently decide that an unknown color must stay or must change. Record the user's answer as a constraint; record the existing palette only as implementation evidence.
+
 ## Make a deliberate choice
 
-When no brand or user decision already determines the theme, consider a small set of plausible directions. Compare what changes the experience: dominant canvas luminance and temperature, surface separation, accent emphasis, content compatibility and reading comfort. Do not manufacture alternatives when an existing direction should simply be preserved.
+When no confirmed brand or user decision determines the theme, consider a small set of plausible directions, including a new theme for an existing project when authorized. Compare what changes the experience: dominant canvas luminance and temperature, surface separation, accent emphasis, content compatibility and reading comfort. Do not manufacture alternatives when the user has already confirmed which direction to preserve.
 
 Select a direction for its task fit and expression, and record one meaningful tradeoff. Keep unselected candidates brief; the user need not approve a mood board unless their preference is necessary. Familiar patterns and palettes remain valid when justified. Difference for its own sake is not a goal.
 
