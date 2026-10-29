@@ -2,6 +2,8 @@
 
 Use when the primary job is completing work accurately: processing a queue, editing a record, comparing resources or coordinating a task. Read after [product-modes.md](product-modes.md). Select the patterns supported by the actual project; this is not a requirement to build a dashboard, add features or adopt a component library.
 
+Task priority does not prescribe an administrative personality. A consumer booking surface can use expressive discovery copy, space photography, a distinctive palette and light delight when those fit the target audience. Keep selection, cost, constraints and consequential actions legible; do not remove user-valued warmth merely because the flow is operational.
+
 ## 1. Map the work before arranging the screen
 
 Inspect representative routes, components, data and role rules. Establish the actor, object, entry point, decision, action and observable result. Include the path back to ongoing work:
@@ -85,7 +87,7 @@ Adapt the work to supported devices. On narrow screens, preserve identifying fie
 
 Use thumbnails when recognizing an asset or person is part of the real task, diagrams when they explain a relevant process, and charts when they support a decision. An operational page can have a visual identity without a decorative hero. Follow the existing project design system.
 
-Use motion to connect an action with its result, maintain orientation during a panel change or track a processed item when useful. Keep frequent actions fast, interruptible and usable with reduced motion. Immediate feedback is valid. Record a deliberate use/reuse/generate/omit decision for imagery and motion separately.
+Use motion to connect an action with its result, maintain orientation or express an audience-appropriate welcome, rhythm or light delight. A dance discovery screen can move more expressively than a dense time picker. Keep frequent actions fast, interruptible and usable with reduced motion. Immediate feedback is valid. Record a deliberate use/reuse/generate/omit decision for imagery and motion separately; a concise emotional purpose is valid.
 
 ## 8. Put selected decisions in the generated Skill
 

@@ -2,6 +2,8 @@
 
 Use this reference to choose the product's job before selecting a visual direction. A mode is a design priority, not a template.
 
+Choose emotional expression separately from task priority. Operate does not mean a neutral palette, administrative voice, no photography or no delight; Read does not mean every page must be emotionally flat. The target audience, activity, user preferences and individual surface determine those choices. The mode protects task completion, comprehension and access.
+
 | Mode | Typical surfaces | Primary success measure | Visual and interaction emphasis |
 | --- | --- | --- | --- |
 | **Operate** | Admin, workbench, tool, collaboration app | User completes the task accurately and quickly | Information hierarchy, states, keyboard flow, recovery, density, purposeful feedback |
@@ -44,10 +46,10 @@ Make these layers explicit in the generated Skill; the document structure can fo
 
 ## Mode boundaries
 
-- Do not add hero sections, marketing copy, showcase media, fake demos, or conversion CTAs to an Operate or Read surface unless they serve a documented user task.
+- On Operate and Read surfaces, choose expressive headings, imagery and motion when they support recognition, invitation, identity or the desired mood, while keeping the task or reading path clear. A discovery page can welcome people more expressively than its confirmation form. Do not invent fake demos, sales funnels or unrelated showcase sections merely to fill space.
 - Do not reduce a Persuade surface to a generic dashboard just because the product has complex features; show the product's real proof at the point it helps understanding.
 - Do not make Experience an excuse for hidden navigation, slow loading, inaccessible text, or motion without a fallback.
-- Images and complex motion are optional in every mode. Include them only when they clarify a task, prove a capability, establish a necessary atmosphere, or provide a meaningful state change.
+- Images and motion are choices in every mode. Recognition, evidence, atmosphere, activity and light delight can each justify them. Choose scale and frequency deliberately; preserve accessibility and speed. Emotional value need not be reduced to an operational explanation.
 
 ## Flexible choices
 

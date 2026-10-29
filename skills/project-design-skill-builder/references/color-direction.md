@@ -11,7 +11,9 @@ Collect only the context that changes the choice:
 - **Brand and content:** existing tokens, supplied references, recognizable assets, photography and explicit preferences or exclusions.
 - **Expression:** what the interface should communicate while supporting its task; distinguish a brand impression from an operational need.
 
-Label unknowns as assumptions. Do not infer that young users want neon, women want pink, technical users want blue, cultural products want beige, or dance bookings happen at night. A user's actual preference is stronger evidence than a category association. Preserve confirmed brand constraints, while allowing the project's theme to change within the user's authorization.
+Use user-supplied audience information as an actionable brief. When the user says the main audience is young dancers, use that audience, its dance activity and the user's preferred examples to guide the design; do not demand demographic proof before making creative choices. Where information is missing, record reasonable hypotheses as hypotheses or ask a targeted question if the answer changes the direction. Avoid deterministic shortcuts such as “young means neon” or “dance means nightclub,” without suppressing audience-led choices altogether. Preserve confirmed brand constraints while allowing the theme to change within the user's authorization.
+
+Carry the audience into a coherent direction for palette, typography, photography, illustration, motion and voice. An active, welcoming dance product might use daylight space photography, expressive copy and light movement; another dance brief might justify a bolder stage-oriented treatment. These are examples to evaluate against the brief, not age-based presets. Record the creative reasoning briefly; do not put research disclaimers in the interface or default to a neutral administrative theme because a preference is not measured.
 
 “Quiet,” “clean,” “premium,” and “expressive” describe desired effects, not specific hues or light/dark modes. They do not by themselves justify warm off-white, black or any other canvas.
 
@@ -25,7 +27,7 @@ Before choosing whether to preserve or replace an unresolved theme, ask one conc
 
 Use the answer:
 
-- **No fixed brand color / redesign authorized:** reassess the theme against the actual tasks, imagery, context and stated taste. Keeping, adjusting and replacing colors are all valid outcomes; continuity is not a default constraint.
+- **No fixed brand color / redesign authorized:** reassess the theme against the audience, tasks, intended feeling, imagery, context and stated taste. Keeping, adjusting and replacing colors are all valid outcomes; continuity is not a default constraint. Permission to change the palette does not require replacing copy, imagery or motion that the user likes.
 - **Required brand color:** keep the confirmed protected color and ask about its scope only if necessary. A protected logo color does not automatically fix page backgrounds, surfaces, secondary colors, selection or status roles.
 - **Some colors protected, others open:** record those boundaries and design within them.
 - **Already answered in the session:** use that answer and do not ask again. An explicit instruction to change the theme is authorization within its stated scope.
@@ -48,7 +50,7 @@ These examples show reasoning boundaries, not prescribed themes:
 
 Use a short project-specific record:
 
-> **Evidence:** supplied facts and clearly labeled assumptions. **Choice:** theme and its role in the task and expression. **Tradeoff:** what this choice gives up or needs to protect. **Revisit when:** new brand, user or usage evidence would change it.
+> **Audience and brief:** user-supplied context, preferred existing qualities and useful assumptions. **Choice:** theme and its relationship to imagery, motion, voice and task clarity. **Tradeoff:** what this choice gives up or needs to protect. **Revisit when:** new brand, user or usage evidence would change it.
 
 Write this in the design rules, not as visible product copy. Do not present inferred preferences as user research or claim improved conversion without measurement.
 

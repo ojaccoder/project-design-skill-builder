@@ -31,7 +31,7 @@ Do not copy exact gradients, colors, radii, illustrations or brand marks. A sour
 
 ## Establish a deliberate visual world
 
-For expressive Persuade / Experience surfaces, consider the relevant items below. For Operate / Read, document hierarchy, density, typography and component roles instead; a visual world is optional:
+For an expressive surface in any mode, consider the relevant items below. Operate / Read also need appropriate hierarchy, density, typography and component roles; those requirements do not prohibit an audience-led visual world:
 
 1. The visitor's visual impression and the product truth it should express.
 2. The dominant composition and biggest visual subject.

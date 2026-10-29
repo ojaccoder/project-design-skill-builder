@@ -27,6 +27,8 @@ npx skills add ojaccoder/project-design-skill-builder
 
 它先检查现有代码、组件和素材，再判断项目更接近 Operate（工具/工作台）、Persuade（官网/落地页）、Read（文档/知识库）还是 Experience（作品集/展览）。然后询问缺失的信息，例如目标用户、核心任务、参考偏好、设备与业务约束。已有答案不必重复提供；可以直接补充你不喜欢的页面和具体原因。
 
+模式决定主要任务，不决定产品必须多克制。面向年轻舞者的预约端，可以保留日光舞室照片、有邀请感的标题和轻微动效；在时段、价格、表单和结果处保持清楚。目标用户会影响配色、字体、图片、动效与语气，用户说“原来这部分挺好”也是需要保留的设计输入。
+
 四种模式各有专门参考：[操作型](../skills/project-design-skill-builder/references/operate-design-patterns.md)、[说服型](../skills/project-design-skill-builder/references/platform-design-patterns.md)、[阅读型](../skills/project-design-skill-builder/references/read-design-patterns.md)、[体验型](../skills/project-design-skill-builder/references/experience-design-patterns.md)。助手按当前界面的主要任务读取；存在明确的次要任务时才补充另一类。作品集或展览不会默认套用官网的转化结构。
 
 ## 3. 看清交付内容
@@ -65,6 +67,8 @@ npx skills add ojaccoder/project-design-skill-builder
 已有项目的主题色可以更改。生成器不会把代码里的主色、名为“brand”的变量，或上一版 AI 原型的颜色自动当成必须保留的品牌色。无法确认时，它先问：“当前主色是必须保留的品牌色，还是可以重新设计的主题色？”如果只是 Logo 颜色固定，也不会自动把整个界面的背景和控件颜色一并固定。用户已经回答或明确授权改主题时，不重复询问。
 
 生成器根据回答确定保留范围，再整理真实用户任务、设备与使用场景和明确偏好。没有品牌色约束时，可比较保留、微调或重新设计主题，记录选择理由和取舍。它不会仅凭“年轻”“女性”“专业”或“舞蹈”等标签推断颜色偏好；未知信息会标成假设。
+
+这不代表忽略目标人群或要求每个审美选择都有研究证明。用户说明主要面向年轻舞者时，生成器会据此提出有活力或松弛等符合具体活动的表达方向，再综合参考与偏好选择；不会机械推导“年轻人只能用荧光色”。允许改主题，也不代表必须改掉原来受认可的文案、图片与动效。
 
 生成的规则会记录用户确认的品牌约束与可改范围，并定义背景、容器、文字、边界、主操作、选中、焦点和适用状态的颜色。实际实现时，检查页面的大面积背景、表单和弹窗是否也应用了选定主题，不能只换按钮颜色。既不因为“已有颜色”而默认保留，也不为了差异而随机换色。方法见[主题与配色](../skills/project-design-skill-builder/references/color-direction.md)。
 
