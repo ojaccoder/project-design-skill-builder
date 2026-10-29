@@ -31,6 +31,8 @@ Infer a provisional mode from the project before asking. Ask a compact batch onl
 
 If the user has already answered a question, do not ask it again. If answers are incomplete, make conservative assumptions and label them.
 
+Before choosing a theme, summarize the audience's actual activity, device and usage environment, information needs, and any established brand or taste evidence. Separate supplied facts from assumptions. A demographic label alone does not establish a color preference; do not invent ages, gender preferences or a nightlife setting from the product category.
+
 ## Phase 3 — Classify the product before choosing a visual direction
 
 First classify the product surface. Read [references/product-modes.md](references/product-modes.md) and choose one primary mode, with a secondary mode only when the same surface has a clear second job:
@@ -71,6 +73,17 @@ Do not automatically add a fake workspace, browser-within-browser, three scenari
 
 For Persuade / Experience, plan content pacing and section composition when the scope warrants it; section heights follow content, not a mandatory viewport size. For Operate, map navigation, work areas, action priority and state transitions. For Read, map content hierarchy, search and reading continuity. Reuse familiar patterns when they reduce effort; novelty is optional.
 
+### Choose color from the audience and context
+
+Read [references/color-direction.md](references/color-direction.md) before selecting or changing a palette. Apply it in every product mode; neutral workbenches and reading surfaces also need a deliberate canvas and contrast decision.
+
+- Respect established brand tokens and the user's preferences. When the direction is open, consider plausible alternatives for the dominant canvas, surface contrast and accent; choose for this project's tasks and expression. A calm interface need not be cream, an expressive one need not be dark or neon, and changing only a button color does not establish a new theme.
+- Record a short chain: **audience and situation → task and intended expression → theme choice and tradeoff**. Name the evidence and any assumptions. Do not treat “premium,” “minimal,” or a demographic stereotype as sufficient rationale.
+- Define semantic color roles, concrete values, scope and when to revisit them in the generated Skill. Include canvas/surfaces, text, muted content, dividers, action/on-action, selection, focus and applicable status colors. Preserve a consistent meaning for each role across the workflow.
+- Check for habit-driven reuse: would the same palette and rationale fit an unrelated project unchanged? If so, improve the project-specific reasoning or revise the choice. Do not rotate colors randomly to create superficial variety, and do not turn the last user's preferred theme into the next project's default.
+
+Keep alternatives and rationale concise in the design rules. Ask the user only when an unresolved preference materially changes the result; do not require a theme-selection questionnaire for every task.
+
 ## Phase 4 — Build the project-specific skill
 
 Create a concise `SKILL.md` and only the supporting references the project needs. The shared core records:
@@ -84,7 +97,7 @@ Create a concise `SKILL.md` and only the supporting references the project needs
 
 Choose additional detail by need:
 
-- **Visual system:** preserve existing tokens unless a change is justified. Define type roles, color roles, spacing and hierarchy at the level needed. A fixed palette size or memorable visual motif is not required. Record whether style is fixed, bounded by constraints, or open to exploration.
+- **Visual system:** preserve existing tokens unless a change is justified. Include the audience/context rationale and semantic color roles selected above, plus type, spacing and hierarchy at the level needed. Specify where the chosen theme applies; a homepage does not automatically decide an editor's light/dark mode. A fixed palette size or memorable visual motif is not required. Record whether style is fixed, bounded by constraints, or open to exploration.
 - **Operate:** document representative task flows, information density, permissions, loading/empty/error states, validation and recovery where applicable. Use realistic content; no invented features to fill a layout.
 - **Read:** document navigation, content hierarchy, search/anchors when needed, readable typography and content-specific treatments such as code or tables.
 - **Persuade / Experience:** include a composition or narrative plan when useful. Asset direction, crop, lighting and depth belong here only when the selected design uses them.
@@ -116,6 +129,7 @@ Embed an implementation handoff in the generated Skill for selected work:
 
 - When later asked to build or redesign the interface, create or reuse the selected assets, save them in the project, and connect them to the real page. If generated raster imagery is selected, invoke the available image-generation capability; a prompt, empty placeholder or unrelated CSS shape is not the finished asset.
 - Implement selected interactions in working components using the existing stack or suitable native APIs. Most UI motion needs code, not a video model. Use model-generated video only when the actual deliverable needs it and access is authorized.
+- Connect the selected semantic palette to the actual project tokens and every applicable surface, including forms, overlays and interaction states. Check rendered canvas/surface colors as well as accents; do not claim a theme update when the dominant background still uses an unselected default. Change comparison treatments only within the requested scope.
 - Verify images load and crop correctly at supported sizes. Exercise the actual triggers and state changes; check reduced-motion behavior. State what was implemented and disclose unavailable capabilities or unfinished selected work. Do not quietly downgrade it to an optional suggestion.
 
 A request only to generate a Skill produces executable design instructions, not a completed website or a claim that assets have been generated. If the user also requests implementation, carry out the selected work within that scope. Keep the handoff self-contained so the next assistant can execute it without this generator.
@@ -132,7 +146,7 @@ Remove redundant eyebrow labels, captions, helper text, repeated explanations, a
 
 This skill is self-contained. Do not route the user to another Skill, ask them to install a package, or require an external design tool. Apply the following principles directly while generating the project-specific skill:
 
-- **Mode-aware visual direction:** ground choices in the product subject, audience, context, and selected mode. Define a palette, type roles, spacing rhythm, hierarchy, and only as much visual signature as the product can support. Avoid applying a preset regardless of content. Cards, centered heroes, gradients, glass, 3D, and large radii are valid when they express hierarchy or brand; choose their roles deliberately. Do not replace every project with cream backgrounds, thin rules, huge black type, or a decorative still life.
+- **Mode-aware visual direction:** ground choices in the product subject, audience, context, and selected mode. Use the audience-to-theme decision and color roles above, not a preset inferred from words such as “clean” or “creative.” Define type roles, spacing rhythm, hierarchy, and only as much visual signature as the product can support. Cards, centered heroes, gradients, glass, 3D, and large radii are valid when they express hierarchy or brand; choose their roles deliberately. Cream backgrounds, thin rules, huge black type, dark neon and any other recurring treatment need the same project-specific justification.
 - **UX and responsive structure:** begin from the user’s primary task. Specify information order, navigation, empty/loading/error states, touch targets, focus states, keyboard behavior, contrast, reduced motion, and mobile/desktop changes.
 - **Purposeful interaction:** every animation must answer what changed or help users understand spatial/state relationships. In Operate, favor feedback, state transitions, filtering, and navigation. In Persuade, use product-linked demonstrations and proof. In Read, protect reading continuity. In Experience, choreograph atmosphere around the content. As starting points, consider ease-out for entrances, ease-in-out for movement, and short durations for frequent actions; tune to the actual interaction. Hover lift, image tilt, and fade-in alone do not demonstrate a product. Specify the scene and accessible static fallback. Avoid default scale-from-zero entrances and broad `transition: all`; choose properties and motion according to the interaction.
 - **Motion performance:** prefer `transform` and `opacity`; avoid layout properties during animation; do not update React state every frame; keep blur modest; add `will-change` only after a measured need; define reduced-motion behavior.
@@ -151,6 +165,8 @@ python3 <available-skill-creator-directory>/scripts/quick_validate.py <skill-fol
 ```
 
 Check that the description is discriminating, the generated skill has no unfinished placeholders, references are linked, and the instructions preserve the user's scope. For a complex generated skill, test it on one realistic request in a temporary workspace before using it on production code.
+
+For color decisions, verify that the generated Skill identifies its audience/context evidence, explains its chosen theme and tradeoff, and provides usable semantic roles. When implementation is in scope, inspect representative populated, empty, selected, disabled and error states at supported sizes. Check text/control contrast and visible focus in the rendered theme. Rule generation alone does not establish that visual or contrast checks passed.
 
 ## Output
 

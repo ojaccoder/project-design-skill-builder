@@ -24,6 +24,7 @@ npx skills add ojaccoder/project-design-skill-builder
 使用 project-design-skill-builder 分析这个项目。
 先问我影响设计的关键背景问题，再生成一套项目专属的设计 Skill。
 优先核心任务和必要状态，区分产品底线、方案选择与可选建议。
+根据目标用户、使用场景和品牌证据选择主题，写清配色理由与颜色角色。
 图片和动效按需要使用，保留必要说明。
 ```
 
@@ -41,6 +42,7 @@ npx skills add ojaccoder/project-design-skill-builder
 | 页面缺少重点：内容等重、布局重复、装饰与任务无关 | 谁在用、先看什么、先做什么，以及适合内容的视觉方向 |
 | 文案空泛、标签太多，用户看不出重点 | 标题说具体用途，按钮说实际动作，状态说发生了什么；删掉口号、重复说明和装饰性标签 |
 | 每次改页面都要重新解释审美 | 将布局、字体、颜色、图片方向和交互约定保存在项目中 |
+| 不同项目总被做成同一种奶白底或其他固定主题 | 从用户、任务、场景和品牌证据选色，记录主题取舍与颜色角色，并检查真实页面的大面积背景 |
 | 图片和动效只是摆设 | 明确图片的内容用途、动效的触发与反馈、实现方式和验收条件 |
 | 普通工具被做成营销页 | 先判断 Operate / Persuade / Read / Experience，再按模式启用视觉和动效规则 |
 
@@ -50,7 +52,7 @@ npx skills add ojaccoder/project-design-skill-builder
 
 ## 你会得到什么
 
-一份项目专属 `SKILL.md`，以及按需要生成的视觉、交互、图片和验收参考文档。它们包含产品模式、用户任务、约束和设计决定，后续新增页面与改版可以直接读取。规则会分成产品底线、本次方案选择和可选建议，避免把一次性的官网审美写成所有项目的硬要求。
+一份项目专属 `SKILL.md`，以及按需要生成的视觉、交互、图片和验收参考文档。它们包含产品模式、用户任务、约束和设计决定，后续新增页面与改版可以直接读取。配色会记录用户与场景依据、方案取舍，以及背景、文字、操作、选中和状态等颜色角色；不会把“简洁”直接等同于奶白底，也不会把某个人群直接等同于一种颜色。规则会分成产品底线、本次方案选择和可选建议，避免把一次性的官网审美写成所有项目的硬要求。
 
 生成器负责制定规则。网页实现、生图和录屏由编程助手执行；图片模型、浏览器与录屏能力取决于助手环境。生成的文件保存在项目中，后续开发可以直接读取。
 
@@ -71,4 +73,4 @@ npx skills add ojaccoder/project-design-skill-builder
 
 按项目需要选取规则，不套用固定页面模板。生成的项目 Skill 会包含选定的规则，后续实现无需再查本生成器的文件。
 
-[界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)
+[主题与配色方法](skills/project-design-skill-builder/references/color-direction.md) · [界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)

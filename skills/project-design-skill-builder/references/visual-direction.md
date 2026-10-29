@@ -10,7 +10,7 @@ Extract a few decisive relationships, not an inventory of widgets:
 
 - **Type:** display-to-body scale, weight contrast, Chinese line breaks, line height, headline measure, optical alignment.
 - **Composition:** content edges, hero height, alignment axes, text-to-media area, whitespace distribution, first-fold cut.
-- **Color:** dominant neutral field, brand field, active accents, muted states, text contrast, section transition.
+- **Color:** dominant canvas (neutral, tinted or saturated as actually observed), brand field, active accents, muted states, text contrast, section transition. Treat a source's background as evidence about that source, not the default for the new project. Use [color-direction.md](color-direction.md) to connect the new theme to its audience and usage context.
 - **Shape:** which layers get large radii, which controls are pills, where straight edges carry structure. One radius applied everywhere erases hierarchy.
 - **Depth:** foreground, subject, background; material, directional light, grounding shadow, overlap and edge crop. Multiple borders do not substitute for depth.
 - **Motion:** which large subject changes, what stays still, duration/easing, image continuity and state transition. A video tag is not proof of a successful animation.
