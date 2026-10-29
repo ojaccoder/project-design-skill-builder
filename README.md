@@ -25,6 +25,7 @@ npx skills add ojaccoder/project-design-skill-builder
 先问我影响设计的关键背景问题，再生成一套项目专属的设计 Skill。
 优先核心任务和必要状态，区分产品底线、方案选择与可选建议。
 根据目标用户、使用场景和品牌证据选择主题，写清配色理由与颜色角色。
+梳理真实使用场景和操作链路，减少无效步骤，明确主次、分组和错误恢复。
 图片和动效按需要使用，保留必要说明。
 ```
 
@@ -45,6 +46,7 @@ npx skills add ojaccoder/project-design-skill-builder
 | 不同项目总被做成同一种奶白底或其他固定主题 | 从用户、任务、场景和品牌证据选色，记录主题取舍与颜色角色，并检查真实页面的大面积背景 |
 | 图片和动效只是摆设 | 明确图片的内容用途、动效的触发与反馈、实现方式和验收条件 |
 | 普通工具被做成营销页 | 先判断 Operate / Persuade / Read / Experience，再按模式启用视觉和动效规则 |
+| 操作绕、信息等重，用户不知道下一步做什么 | 从真实场景安排信息与动作，减少重复填写和记忆负担，保留返回与错误恢复；不硬套“三次点击” |
 
 **Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.**
 
@@ -73,4 +75,4 @@ npx skills add ojaccoder/project-design-skill-builder
 
 按项目需要选取规则，不套用固定页面模板。生成的项目 Skill 会包含选定的规则，后续实现无需再查本生成器的文件。
 
-[主题与配色方法](skills/project-design-skill-builder/references/color-direction.md) · [界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)
+[交互与布局方法](skills/project-design-skill-builder/references/interaction-layout.md) · [主题与配色方法](skills/project-design-skill-builder/references/color-direction.md) · [界面文案规则](skills/project-design-skill-builder/references/interface-copy.md) · [详细使用方法](docs/getting-started.md) · [查看生成器](skills/project-design-skill-builder/SKILL.md)

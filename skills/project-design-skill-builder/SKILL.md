@@ -19,7 +19,7 @@ If the user supplied screenshots or reference images, inspect them and extract o
 
 Infer a provisional mode from the project before asking. Ask a compact batch only about missing decisions that materially affect the generated skill; use these as a question pool, not a mandatory questionnaire:
 
-1. Who uses the product and what is their primary task?
+1. Who uses the product, what triggers their visit, and what result are they trying to achieve? What do they already know or have available?
 2. Which surface is in scope (student front end, admin, landing page, mobile web, desktop)?
 3. What defines success: completing a task, deciding to adopt, understanding content, or experiencing a story?
 4. What content, data, states, and actions must remain unchanged?
@@ -32,6 +32,8 @@ Infer a provisional mode from the project before asking. Ask a compact batch onl
 If the user has already answered a question, do not ask it again. If answers are incomplete, make conservative assumptions and label them.
 
 Before choosing a theme, summarize the audience's actual activity, device and usage environment, information needs, and any established brand or taste evidence. Separate supplied facts from assumptions. A demographic label alone does not establish a color preference; do not invent ages, gender preferences or a nightlife setting from the product category.
+
+Read [references/interaction-layout.md](references/interaction-layout.md) when establishing the task flow, information order and layout. Ground these choices in representative scenarios, not a list of features. Capture the starting context, decisions users need to make, information needed for those decisions, and an observable finish. This shared guide complements the selected product-mode reference; embed its applicable decisions in the generated project Skill.
 
 ## Phase 3 — Classify the product before choosing a visual direction
 
@@ -65,7 +67,7 @@ These guides contain methods, not dependencies on other Skills or component libr
 
 When the task needs visual exploration or asks to learn named websites, selectively read [references/visual-direction.md](references/visual-direction.md). Inspect actual rendered pages and separate visual-system analysis from product-flow analysis; neither substitutes for the other.
 
-Choose the page's job within the selected mode and establish the strongest truthful evidence the product can show. For Operate, map the primary task and state model before discussing visual worlds. For Persuade, compare product-first, proof-first, and capability/scenario compositions. For Read, compare outline-first and content-first structures. For Experience, compare immersive and editorial structures. Changing only color or swapping left/right is not a distinct direction. Present choices only when a user decision is needed.
+Choose the page's job within the selected mode and establish the strongest truthful evidence the product can show. Use the scenario to decide the information order and primary action before arranging components. Identify unnecessary detours, repeated input and information users would otherwise need to remember across screens; simplify those without hiding material constraints or forcing a fixed click count. For Operate, map the primary task and state model before discussing visual worlds. For Persuade, compare product-first, proof-first, and capability/scenario compositions. For Read, compare outline-first and content-first structures. For Experience, compare immersive and editorial structures. Changing only color or swapping left/right is not a distinct direction. Present choices only when a user decision is needed.
 
 Set expression level from the brief and mode: quiet, expressive, or immersive. A rich platform site can permit stronger media, depth, scene changes, and coordinated motion when it is Persuade or Experience. In Operate and Read, use motion and visual emphasis to clarify state, priority, or navigation. Restraint applies to redundant words and competing priorities; it does not prescribe an empty, static page.
 
@@ -89,6 +91,7 @@ Keep alternatives and rationale concise in the design rules. Ask the user only w
 Create a concise `SKILL.md` and only the supporting references the project needs. The shared core records:
 
 - audience, primary tasks, success criteria and mode per surface;
+- representative scenario and task path, decision-critical fields, action priority, information grouping and where returning users retain context;
 - the three constraint layers, with scope and reasons for consequential decisions;
 - existing design-system conventions to retain, information architecture and responsive targets;
 - applicable interaction states, recovery, accessibility and business invariants;
@@ -129,6 +132,7 @@ Embed an implementation handoff in the generated Skill for selected work:
 
 - When later asked to build or redesign the interface, create or reuse the selected assets, save them in the project, and connect them to the real page. If generated raster imagery is selected, invoke the available image-generation capability; a prompt, empty placeholder or unrelated CSS shape is not the finished asset.
 - Implement selected interactions in working components using the existing stack or suitable native APIs. Most UI motion needs code, not a video model. Use model-generated video only when the actual deliverable needs it and access is authorized.
+- Apply the scenario-derived information order, grouping and action hierarchy to working components. Walk through entry, decisions, submission and return/recovery where applicable; do not substitute a well-styled first screen for a complete task path.
 - Connect the selected semantic palette to the actual project tokens and every applicable surface, including forms, overlays and interaction states. Check rendered canvas/surface colors as well as accents; do not claim a theme update when the dominant background still uses an unselected default. Change comparison treatments only within the requested scope.
 - Verify images load and crop correctly at supported sizes. Exercise the actual triggers and state changes; check reduced-motion behavior. State what was implemented and disclose unavailable capabilities or unfinished selected work. Do not quietly downgrade it to an optional suggestion.
 
@@ -147,7 +151,7 @@ Remove redundant eyebrow labels, captions, helper text, repeated explanations, a
 This skill is self-contained. Do not route the user to another Skill, ask them to install a package, or require an external design tool. Apply the following principles directly while generating the project-specific skill:
 
 - **Mode-aware visual direction:** ground choices in the product subject, audience, context, and selected mode. Use the audience-to-theme decision and color roles above, not a preset inferred from words such as “clean” or “creative.” Define type roles, spacing rhythm, hierarchy, and only as much visual signature as the product can support. Cards, centered heroes, gradients, glass, 3D, and large radii are valid when they express hierarchy or brand; choose their roles deliberately. Cream backgrounds, thin rules, huge black type, dark neon and any other recurring treatment need the same project-specific justification.
-- **UX and responsive structure:** begin from the user’s primary task. Specify information order, navigation, empty/loading/error states, touch targets, focus states, keyboard behavior, contrast, reduced motion, and mobile/desktop changes.
+- **UX and responsive structure:** use the scenario, task-effort and layout methods from [references/interaction-layout.md](references/interaction-layout.md). Keep decision-critical information together, distinguish primary/secondary actions within their task area, and reveal infrequent options only when useful. Use grouping, alignment and relative emphasis to establish hierarchy; do not impose a universal card grid, one-button quota or click limit. Specify navigation, relevant states, keyboard/focus, contrast, touch and mobile/desktop changes.
 - **Purposeful interaction:** every animation must answer what changed or help users understand spatial/state relationships. In Operate, favor feedback, state transitions, filtering, and navigation. In Persuade, use product-linked demonstrations and proof. In Read, protect reading continuity. In Experience, choreograph atmosphere around the content. As starting points, consider ease-out for entrances, ease-in-out for movement, and short durations for frequent actions; tune to the actual interaction. Hover lift, image tilt, and fade-in alone do not demonstrate a product. Specify the scene and accessible static fallback. Avoid default scale-from-zero entrances and broad `transition: all`; choose properties and motion according to the interaction.
 - **Motion performance:** prefer `transform` and `opacity`; avoid layout properties during animation; do not update React state every frame; keep blur modest; add `will-change` only after a measured need; define reduced-motion behavior.
 - **Image generation:** treat image generation as an art-direction problem. Infer subject, material, proportion, palette, light, texture, composition, and brand temperament before writing prompts. When an image is needed, call the host’s available image-generation capability directly; if unavailable, state the limit and provide a concrete fallback rather than claiming generation occurred. Prefer images that show the actual subject or output, and give related assets a common art direction. One repeated ornamental picture does not establish capability. For website UI, build real components and use browser screenshots instead of rendering fake UI text into an image; do not ask the project user to install an image Skill or image package. Preserve supplied subjects faithfully, define aspect ratio and safe text areas, and check consistency across the set.
@@ -167,6 +171,8 @@ python3 <available-skill-creator-directory>/scripts/quick_validate.py <skill-fol
 Check that the description is discriminating, the generated skill has no unfinished placeholders, references are linked, and the instructions preserve the user's scope. For a complex generated skill, test it on one realistic request in a temporary workspace before using it on production code.
 
 For color decisions, verify that the generated Skill identifies its audience/context evidence, explains its chosen theme and tradeoff, and provides usable semantic roles. When implementation is in scope, inspect representative populated, empty, selected, disabled and error states at supported sizes. Check text/control contrast and visible focus in the rendered theme. Rule generation alone does not establish that visual or contrast checks passed.
+
+For interaction and layout, inspect a representative end-to-end scenario, including a return or recovery path when applicable. Check that users can locate the right object, see the information needed for each decision, identify the next action and understand the outcome. Record observed detours, repeated input or lost context; do not equate fewer clicks or a screenshot review with proven usability improvement. State whether verification was an agent walkthrough or involved actual users.
 
 ## Output
 

@@ -11,6 +11,11 @@
 
 操作型、阅读型和体验型参考为方法整理，不声称完成了真实后台、知识库或展览网站的案例审计。各文档末尾列出可选的一手来源；项目保留自己的设计系统，无需安装来源中的组件库。选中的方法会写进生成的项目 Skill。
 
+## 交互、布局与主题
+
+- [交互与布局方法](../skills/project-design-skill-builder/references/interaction-layout.md)：从 GOV.UK 用户需求与按钮规则、USWDS 设计原则、NN/g 的层级 / 渐进披露 / 可用性启发式 / 点击数研究，以及 W3C WAI 表单反馈中整理可执行方法。文档保留八个原始来源、项目改编与适用边界，最后核对于 2026-10-29。
+- [主题与配色方法](../skills/project-design-skill-builder/references/color-direction.md)：按用户、场景、任务和品牌证据决定颜色角色，检查完整主题，避免固定奶白底或另一套通用配色。这是项目选色方法，不是调色板清单。
+
 ## 其他来源
 
 - [Impeccable](https://impeccable.style/)：设计判断、反模板化检查与以具体任务组织能力。
